@@ -1,0 +1,108 @@
+.navbar {
+    width: 100vw;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+#zillow-icon{
+    cursor: pointer;
+}
+
+.left-navbar{
+    display: flex;
+    margin-right: 140px;
+}
+
+.right-navbar{
+    display: flex;
+    margin-left: 140px;
+}
+
+.left-navbar-elements{
+    margin-left: 30px;
+}
+
+.left-navbar-elements:hover{
+    color: #0069ff;
+    cursor: pointer;
+}
+
+.right-navbar-elements{
+    margin-left: 30px;
+}
+
+.right-navbar-elements:hover{
+    color: #0069ff;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: absolute;
+    left: 14px;
+    display:none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #house{
+    position:absolute;
+    width: 100%;
+  }
+
+  .contain{
+    position: relative;
+    width: 100vw;
+    height: 420px;
+    overflow: hidden;
+  }
+
+  .jumbotro{
+    width: 100vw;
+  }
+
+@media (max-width: 890px) {
+    .left-navbar {
+        display: none;
+    }
+    .right-navbar {
+        display: none;
+    }
+   .dropdown{
+    display: block;
+   }
+
+}
